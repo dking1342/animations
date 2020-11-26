@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+:root{
+
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  font-family: 'Nunito',sans-serif;
+  overflow: hidden;
+}
+
+
+.container{
+  width: inherit;
+  height: inherit;
+  display: grid;
+  align-items: center;
+  justify-items:center;
+  position: relative;
+  background: rgba(0,0,0,0.5);
+  mix-blend-mode:multiply;
+  filter: brightness(1.2) contrast(1.25);
+}
+.bg-top{
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image:url('https://img.freepik.com/free-vector/autumn-city-street-with-trees-buildings-background_1262-16244.jpg?size=626&ext=jpg');
+  background-position: top right;
+  background-repeat:repeat-x;
+  background-size: 50vw 50vh;
+  animation: 6s animatebg linear infinite;
+  z-index: -1;
+}
+.bg-bottom{
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  background-image:url('https://www.clker.com/cliparts/y/7/D/2/0/g/sidewalk.svg');
+  background-position: bottom right;
+  background-repeat:repeat-x;
+  background-size: 50vw 50vh;
+  animation: 6s animatebgbottom linear infinite;
+  z-index: -1;
+}
+
+
+@keyframes animatebg {
+  from{background-position: top right}
+  from{background-position: top left}
+}
+@keyframes animatebgbottom {
+  from{background-position: bottom right}
+  from{background-position: bottom left}
+}
+
+.bg{
+  width: 500px;
+  height: 500px;
+
+}
+
+svg{
+  width: 500px;
+  height: 500px;
+  background: transparent;
+  animation: animateAll 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes animateAll {
+  from{transform: translateY(0px);}
+  to{transform: translateY(-14px);}
+}
+
+#leftLeg{
+  transform:rotate(0deg);
+  transform-origin: center;
+  animation: animate 1s ease-in-out infinite alternate;
+}
+#rightLeg{
+  transform: rotate(60deg);
+  transform-origin: center;
+  animation: animate 1s 1s ease-in-out infinite alternate both;
+}
+#upperBody{
+  transform: rotate(2deg);
+  transform-origin: center;
+  animation: animateBody 1s ease-in-out infinite alternate both;
+}
+#frontArm{
+  transform: rotate(-0deg);
+  transform-origin: 240px 120px;
+  animation: 1s animateArm ease-in-out infinite alternate both;
+}
+#backArm{
+  transform: rotate(-0deg);
+  transform-origin: 240px 120px;
+  animation: 1s 1s animateArm ease-in-out infinite alternate both;
+}
+
+@keyframes animateArm {
+  from{transform: rotate(-28deg);}
+  to{transform: rotate(15deg);}
+}
+
+
+
+
+@keyframes animate {
+  from{transform: rotate(20deg);}
+  to{transform: rotate(60deg);}
+}
+@keyframes animateBody {
+  from{transform: rotate(2deg);}
+  to{transform: rotate(-2deg);}
+}

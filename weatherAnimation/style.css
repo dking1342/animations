@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+:root{
+
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  font-family: 'Nunito',sans-serif;
+  overflow: hidden;
+  background: rgba(0,0,0,0.1);
+  display: grid;
+  grid-template-columns: 15% auto 15%;
+  grid-template-rows: 15% auto 15%;
+  align-items: center;
+  justify-items:center;
+}
+
+.container{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  /* background: #bbb; */
+  background: rgba(50,50,255,0.9);
+  border-radius: 25px;
+  width: 500px;
+  height: 500px;
+}
+
+.rain{
+  transform: rotateZ(-5deg) translate(25px,-100px);
+  transform-origin: center;
+}
+.rain1{animation: 0.7s rainDrop1 linear infinite;}
+.rain2{animation: 0.7s 0.35s rainDrop1 linear infinite;}
+
+.rainG2{
+  transform: rotateZ(-5deg) translate(90px,-90px);
+  transform-origin: center;
+}
+.rain3{animation: 0.8s rainDrop2 linear infinite;}
+.rain4{animation: 0.8s 0.4s rainDrop2 linear infinite;}
+
+.rainG3{
+  transform: rotateZ(-5deg) translate(150px,-85px);
+  transform-origin: center;
+}
+.rain5{animation: 0.7s rainDrop3 linear infinite;}
+.rain6{animation: 0.7s 0.3s rainDrop3 linear infinite;}
+
+.rainG4{
+  transform: rotateZ(-5deg) translate(210px,-80px);
+  transform-origin: center;
+}
+.rain7{animation: 0.8s rainDrop4 linear infinite;}
+.rain8{animation: 0.8s 0.4s rainDrop4 linear infinite;}
+
+.rainG5{
+  transform: rotateZ(-5deg) translate(270px,-75px);
+  transform-origin: center;
+}
+.rain9{animation: 0.7s rainDrop5 linear infinite;}
+.rain10{animation: 0.7s 0.3s rainDrop5 linear infinite;}
+
+
+
+@keyframes rainDrop1 {
+  from{transform: rotateZ(-5deg) translate(25px,-100px);}
+  to{transform: rotateZ(-5deg) translate(25px,100px);}
+}
+
+@keyframes rainDrop2 {
+  from{transform: rotateZ(-5deg) translate(90px,-90px);}
+  to{transform: rotateZ(-5deg) translate(90px,100px);}
+}
+
+@keyframes rainDrop3 {
+  from{transform: rotateZ(-5deg) translate(150px,-85px);}
+  to{transform: rotateZ(-5deg) translate(150px,100px);}
+}
+
+@keyframes rainDrop4 {
+  from{transform: rotateZ(-5deg) translate(270px,-75px);}
+  to{transform: rotateZ(-5deg) translate(270px,100px);}
+}
+
+@keyframes rainDrop5 {
+  from{transform: rotateZ(-5deg) translate(210px,-80px);}
+  to{transform: rotateZ(-5deg) translate(210px,100px);}
+}

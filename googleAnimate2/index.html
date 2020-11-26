@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- UI interface meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font Awesome script -->
+    <script src="https://kit.fontawesome.com/9e65d56683.js"></script>
+    <!-- Page style sheet -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Photoshop</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <svg id="google" viewBox="0 0 500 500">
+        <radialGradient id="gradient1" gradientUnits="userSpaceOnUse"
+          gradientTransform="rotate(25) translate(0,-300)">
+          <stop offset="10%" stop-color="rgba(255,255,255,0.2)" />
+          <stop offset="100%" stop-color="transparent" />
+        </radialGradient>
+
+        <g id="logo">
+          <path id="red" fill="#dd5144" d="M180,260 L120,100 C120,100 190,45 260,50 C260,50 378,45 438,180  L438,180 280,180" />
+          <path id="yellow" fill="#ffc046" d="M320,290 L250,450 C245,455 500,440 438,180 L438,180 280,180" />
+          <path id="green" fill="#1da462" d="M250,450 C250,450 112,455 60,310 C60,310 17,190 120,100 L180,260 L320,290 " />
+
+          <path id="shadow1" fill="rgba(0,0,0,0.2)" stroke="black" stroke-width="0" d="M180,260 L180,260 120,100 L120,100 230,250" />
+          <path id="shadow2" fill="rgba(0,0,0,0.2)" stroke="black" stroke-width="0" d="M290,180 L290,180 438,180 L438,180 280,210 " />
+          <path id="shadow3" fill="rgba(0,0,0,0.2)" stroke="black" stroke-width="0" d="M320,290 L320,290 250,450 L250,450 280,320  " />
+        </g>
+
+        <circle fill="url('#gradient1')" r="200" cx="250" cy="250" />
+        <circle fill="white" r="80" cx="250" cy="250" />
+        <circle fill="#4c88f5" r="60" cx="250" cy="250" />
+
+      </svg>
+
+    </div>
+
+
+<!-- Scripts -->
+  <script src="./main.js"></script>
+  </body>
+</html>

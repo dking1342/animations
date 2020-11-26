@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- UI interface meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font Awesome script -->
+    <script src="https://kit.fontawesome.com/9e65d56683.js"></script>
+    <!-- Page style sheet -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Photoshop</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="bg-top"></div>
+      <div class="bg-bottom"></div>
+
+      <div class="bg">
+        <svg id="body" viewBox="0 0 500 500">
+          <g id="rightLeg">
+            <line stroke="rgba(0,0,255,0.95)" stroke-width="15" x1="250" y1="250" x2="410" y2="405"  />
+            <line stroke="rgba(0,0,0,0.55)" stroke-width="15" x1="250" y1="250" x2="410" y2="405"  />
+            <line stroke="red" stroke-width="18" x1="411" y1="393" x2="380" y2="430"  />
+            <line stroke="rgba(0,0,0,0.55)" stroke-width="18" x1="411" y1="393" x2="380" y2="430"  />
+          </g>
+          <g id="leftLeg">
+            <line stroke="blue" stroke-width="15" x1="250" y1="250" x2="410" y2="405"  />
+            <line stroke="rgba(0,0,0,0.25)" stroke-width="7" x1="255" y1="250" x2="410" y2="405"  />
+            <line stroke="red" stroke-width="18" x1="411" y1="393" x2="380" y2="430"  />
+          </g>
+          <g id="backArm">
+            <path fill="green" stroke="rgba(0,0,0,0.3)" stroke-width="1" d="M245,120 Q252,125 225,183 T200,210 Z" />
+            <path fill="rgba(0,0,0,0.5)" stroke="rgba(0,0,0,0.3)" stroke-width="1" d="M245,120 Q252,125 225,183 T200,210 " />
+            <circle fill="#c68642" r="10" cx="195" cy="220" />
+            <circle fill="rgba(0,0,0,0.4)" r="10" cx="195" cy="220" />
+          </g>
+          <g id="upperBody">
+            <circle id="head" fill="#c68642" r=40 cx="250" cy="60" />
+            <path id="torso" fill="green" stroke="green" d="M240,100 L220,120 L210,230 L290,230 L280,120 L260,100" />
+            <path id="seat1" fill="blue" stroke="blue" d="M210,230 L220,250 L280,250 L290,230 " />
+            <path id="seat2" fill="blue" stroke="blue" d="M220,250 L240,270 L265,270 L280,250  " />
+            <path id="hair" fill="brown" stroke="brown" d="M280,90 C280,90 315,35 250,20 Q170,30 240,40 Q240,60 270,80" />
+            <circle id="eye" r="5" fill="rgba(255,255,255,0.6)" cx="220" cy="55" />
+            <circle id="iris" r="4" fill="blue" cx="219" cy="55" />
+            <path id="nose" fill="#c68642" stroke="" d="M212,58 Q210,55 200,70 Q205,70 213,72" />
+            <path id="smile" fill="none" stroke="black" d="M218,80 C215,80 220,85 230,75 " />
+
+            <g id="frontArm">
+              <path fill="green" stroke="rgba(0,0,0,0.3)" stroke-width="1" d="M245,120 Q252,125 225,183 T200,210 Z" />
+              <path fill="rgba(0,0,0,0.2)" stroke="rgba(0,0,0,0.3)" stroke-width="1" d="M245,120 Q252,125 225,183 T200,210 " />
+              <circle fill="#c68642" r="10" cx="195" cy="220" />
+            </g>
+
+            <path id="shadow1" fill="rgba(0,0,0,0.5)" stroke="" d="M260,270 L280,230 L290,230 L280,250" />
+            <path id="shadow2" fill="rgba(0,0,0,0.4)" stroke="" d="M260,100 L280,230 L290,230 L280,120" />
+            <path id="shadow3" fill="rgba(0,0,0,0.2)" stroke="" d="M250,20 C250,20 312,35 282,87" />
+          </g>
+        </svg>
+      </div>
+    </div>
+
+
+<!-- Scripts -->
+  <script src="./main.js"></script>
+  </body>
+</html>

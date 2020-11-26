@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+:root{
+
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  font-family: 'Nunito',sans-serif;
+  overflow: hidden;
+  display: grid;
+  align-items: center;
+  justify-items:center;
+
+}
+
+.container{
+  width: 500px;
+  height: 500px;
+  background: rgba(0,0,0,0.8);
+  border: 1px solid black;
+}
+
+svg{
+  width: inherit;
+  height: inherit;
+}
+
+#logo{
+  animation: animate 2.5s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes animate {
+  0%{transform:rotate(0deg);}
+  70%{transform:rotate(460deg);}
+  100%{transform:rotate(360deg);}
+}

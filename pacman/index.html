@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- UI interface meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font Awesome script -->
+    <script src="https://kit.fontawesome.com/9e65d56683.js"></script>
+    <!-- Page style sheet -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Template Website</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" preserveAspectRatio="none">
+        <linearGradient id="outline" gradientTransform="rotate(120,0.3,0.5)">
+          <stop offset="0%"  stop-color="cornflowerblue" />
+          <stop offset="35%" stop-color="blue" />
+          <stop offset="75%" stop-color="skyblue" />
+          <stop offset="100%" stop-color="lightblue" />
+        </linearGradient>
+        <linearGradient id="bg" gradientTransform="rotate(105,0.4,0.0)">
+          <stop offset="0%"  stop-color="rgba(0,0,0,0.0)" />
+          <stop offset="10%" stop-color="rgba(0,0,0,0.0)" />
+          <!-- <stop offset="20%" stop-color="rgba(0,0,0,0.1)" /> -->
+          <!-- <stop offset="30%" stop-color="rgba(0,0,0,0.1)" /> -->
+          <stop offset="40%" stop-color="rgba(200,0,0,0.05)" />
+          <!-- <stop offset="50%"  stop-color="rgba(0,0,0,0.2)" /> -->
+          <!-- <stop offset="60%" stop-color="rgba(0,0,0,0.2)" /> -->
+          <!-- <stop offset="70%" stop-color="rgba(0,0,0,0.2)" /> -->
+          <stop offset="80%" stop-color="rgba(250,0,0,0.15)" />
+          <!-- <stop offset="90%" stop-color="rgba(0,0,0,0.3)" /> -->
+          <!-- <stop offset="100%" stop-color="rgba(0,0,0,0.3)" /> -->
+        </linearGradient>
+        <linearGradient id="apple" gradientTransform="rotate(150,0.78,1.15)">
+          <stop offset="0%"  stop-color="rgba(0,0,0,0.0)" />
+          <stop offset="10%" stop-color="rgba(0,0,0,0.0)" />
+          <!-- <stop offset="20%" stop-color="rgba(0,0,0,0.1)" /> -->
+          <!-- <stop offset="30%" stop-color="rgba(0,0,0,0.1)" /> -->
+          <stop offset="40%" stop-color="rgba(0,0,0,0.05)" />
+          <!-- <stop offset="50%"  stop-color="rgba(0,0,0,0.2)" /> -->
+          <!-- <stop offset="60%" stop-color="rgba(0,0,0,0.2)" /> -->
+          <!-- <stop offset="70%" stop-color="rgba(0,0,0,0.2)" /> -->
+          <stop offset="80%" stop-color="rgba(0,0,0,0.1)" />
+          <!-- <stop offset="90%" stop-color="rgba(0,0,0,0.3)" /> -->
+          <!-- <stop offset="100%" stop-color="rgba(0,0,0,0.3)" /> -->
+        </linearGradient>
+
+        <rect height="300" width="500" x="0" y="0" fill="rgba(100,0,200,0.15)" />
+        <rect height="300" width="500" x="0" y="0" fill="url('#bg')" />
+        <path stroke="slategrey" stroke-width="1" d="M0,300 L500,300"  />
+        <g class="pacman">
+          <circle class="body" fill="yellow" stroke="rgba(255,255,255,0.2)" stroke-width="3" r="69" cx="180" cy="220"  />
+          <path class="mouth" fill="rgba(120,0,120,0.25)" stroke="rgba(0,0,0,0.1)" stroke-width="3" d="M180,215 L130,170 A70,70 0 0,1 130,170 Z" />
+          <path class="shadow2" fill="url('#apple')" stroke="black" stroke-width="0" d="M184,230 C180,140 270,155 280,157 C190,175 190,215 187,230" />
+          <circle class="shadow3" fill="url('#apple')" stroke="none" r="60" ry="" cx="250" cy="250" />
+        </g>
+        
+
+        <g class="ghost">
+          <path class="ghost2" fill="red" stroke="black" stroke-width="0" d="M350,270 Q362,200 375,270 T400,270 T425,270 T450,270 T475,270 " />
+          <path class="ghost3" fill="red" stroke="black" stroke-width="0" d="M350,270 Q362,340 375,270 T400,270 T425,270 T450,270 T475,270 " />
+          <path class="ghost1" fill="red" stroke="black" stroke-width="0" d="M350,270 L350,250 T350,170 410,80 T473,130 475,170 L475,270  Z" />
+          <circle class="shadow3" fill="url('#apple')" stroke="none" r="60" ry="" cx="415" cy="380" />
+          <circle class="eyes" fill="white" stroke="rgba(0,0,0,0.15)" stroke-width="10" r="20" cx="390" cy="150" />
+          <circle class="eyes" fill="blue" stroke="rgba(0,0,0,0.15)" stroke-width="10" r="10" cx="390" cy="150" />
+          <circle class="eyes" fill="white" stroke="rgba(0,0,0,0.15)" stroke-width="10" r="20" cx="442" cy="150" />
+          <circle class="eyes" fill="blue" stroke="rgba(0,0,0,0.15)" stroke-width="10" r="10" cx="442" cy="150" />
+          <path class="shadow2" fill="url('#apple')" stroke="black" stroke-width="0" d="M350,170 C345,100 400,70 440,80 C370,90 350,150 350,170" />
+        </g>
+
+
+        <rect height="200" width="5500" x="0" y="300" fill="url('#bg')" />
+
+
+
+      </svg>
+
+      <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1000px-Apple_logo_black.svg.png" alt=""> -->
+
+    </div>
+
+
+
+<!-- Scripts -->
+  <script src="./main.js"></script>
+  </body>
+</html>

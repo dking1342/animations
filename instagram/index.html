@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- UI interface meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font Awesome script -->
+    <script src="https://kit.fontawesome.com/9e65d56683.js"></script>
+    <!-- Page style sheet -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Photoshop</title>
+  </head>
+  <body>
+
+
+    <svg class="insta" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="bg-lg-1" gradientTransform="rotate(-90 0.9 -0.0)">
+          <stop offset="0%" stop-color="rgba(255, 220, 128,0.8)"/>
+          <stop offset="30%" stop-color="rgba(255, 220, 128,0.0)"/>
+        </linearGradient>
+        <linearGradient id="bg-lg-2" gradientTransform="rotate(-60 0.9 -0.0)">
+          <stop offset="30%" stop-color="rgba(252, 175, 69,0.8)"/>
+          <stop offset="50%" stop-color="rgba(252, 175, 69,0)"/>
+        </linearGradient>
+        <radialGradient cx="40%" cy="120%" r="130%" id="test" >
+          <stop offset="20%" stop-color="rgba(255, 220, 128,1)"/>
+          <stop offset="30%" stop-color="rgba(252, 175, 69,1)"/>
+          <stop offset="40%" stop-color="rgba(247, 119, 55,1)"/>
+          <stop offset="50%" stop-color="rgba(253,36,76,1)"/>
+          <stop offset="60%" stop-color="rgba(225,48,108,1)"/>
+          <stop offset="70%" stop-color="rgba(193,53,132,1)"/>
+          <stop offset="80%" stop-color="rgba(131,58,180,1)"/>
+          <stop offset="90%" stop-color="rgba(88,81,216,1)"/>
+          <stop offset="100%" stop-color="rgba(5,10,230,1)"/>
+        </radialGradient>
+        <radialGradient cx="200" cy="600" r="650" id="test1" >
+          <stop offset="100" stop-color="rgba(255, 220, 128,1)"/>
+          <stop offset="150" stop-color="rgba(252, 175, 69,1)"/>
+          <stop offset="200" stop-color="rgba(247, 119, 55,1)"/>
+          <stop offset="250" stop-color="rgba(253,36,76,1)"/>
+          <stop offset="300" stop-color="rgba(225,48,108,1)"/>
+          <stop offset="350" stop-color="rgba(193,53,132,1)"/>
+          <stop offset="400" stop-color="rgba(131,58,180,1)"/>
+          <stop offset="450" stop-color="rgba(88,81,216,1)"/>
+          <stop offset="500" stop-color="rgba(5,10,230,1)"/>
+        </radialGradient>
+
+        <g id="white-logo">
+          <rect class="bg-3" x="10%" y="10%" width="80%" height="80%" fill="url('#test')" stroke="white" stroke-width="0" rx="100" ry="100"/>
+          <rect class="logo-1" x="20%" y="20%" width="60%" height="60%" fill="none" stroke="white" stroke-width="30" rx="70" ry="70"/>
+          <circle class="logo-2" cx="50%" cy="50%" r="70" fill="none" stroke="white" stroke-width="30"/>
+          <circle class="logo-3" cx="67%" cy="32%" r="20" fill="white" stroke="none" stroke-width="0"/>
+        </g>
+
+        <mask id="mask-logo" x="0" y="0" width="500" height="500" >
+          <rect x="0" y="0" width="500" height="500" fill="black"/>
+          <circle class="logo-3" cx="67%" cy="32%" r="20" fill="white"/>
+          <circle class="logo-2" cx="50%" cy="50%" r="70" fill="none" stroke="white" stroke-width="30"/>
+          <rect class="logo-1" x="20%" y="20%" width="60%" height="60%" fill="none" stroke="white" stroke-width="30" rx="70" ry="70"/>
+        </mask>
+
+
+
+      </defs>
+
+      <use class="logo" x="0" y="0" href="#white-logo"/>
+      <rect class="inverse-logo" x="10%" y="10%" width="80%" height="80%" fill="url('#test')" rx="100" ry="100" mask="url(#mask-logo)" />
+
+
+
+
+    </svg>
+
+
+
+
+
+
+
+<!-- Scripts -->
+  <script src="./main.js"></script>
+  </body>
+</html>
