@@ -1,0 +1,128 @@
+
+:root{
+  /* colors for the boxes */
+  --bg-color1:#ff0000;
+  --bg-color2:orange;
+  --bg-color3:yellow;
+  --bg-color4:green;
+  --bg-color4:blue;
+
+  /* size of the container */
+  --width-container:400px;
+  --height-container:400px;
+
+  /* for a large box effect */
+  --width:180px;
+  --height:180px;
+
+
+  /* for a small box effect */
+  /* --width:50px;
+  --height:50px; */
+
+  /* animation standard with delay to be put for each box */
+  --animation: flip 8s normal linear forwards infinite;
+
+
+  /* the center where the animation will revolve around */
+  --t-origin: 200px 200px 0px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  background: #eee;
+  color: #999;
+  font-family: 'Nunito',sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.container{
+  width: var(--width-container);
+  height: var(--height-container);
+  position: relative;
+  background-color: transparent;
+
+  /* for a 3d look at a tilted plane   */
+  /* transform:rotateX(30deg) rotateY(30deg) translateZ(-0px) scale(0.5); */
+ 
+  /* for a look straight atop */
+  transform:rotateX(0deg) rotateY(0deg) translateZ(-0px) scale(0.5);
+ 
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+
+.box{
+  position: absolute;
+  top:0px;
+  left:0px;
+  width:var(--width);
+  height:var(--height);
+  background-color: var(--bg-color1); 
+  border: 1px solid white;
+  backface-visibility: visible;
+  transform-origin: var(--t-origin);
+}
+
+.box1{
+  background-color: var(--bg-color);
+  animation: var(--animation);
+  animation-delay: 0s;
+}
+.box2{
+  background-color: var(--bg-color);
+  animation: var(--animation);
+  animation-delay: 2s;
+}
+.box3{
+  background-color: var(--bg-color);
+  animation: var(--animation);
+  animation-delay: 4s;
+}
+.box4{
+  background-color: var(--bg-color);
+  animation: var(--animation);
+  animation-delay: 6s;
+}
+
+
+@keyframes flip {
+  0%{
+    transform:rotateX(0deg) rotateY(0deg);
+    background-color: var(--bg-color1);
+  }
+  25%{
+    transform:rotateX(0deg) rotateY(180deg);
+    background-color: var(--bg-color2);
+  }
+  50%{
+    transform:rotateX(-180deg) rotateY(180deg);
+    background-color: var(--bg-color3);
+  } 
+  75%{
+    transform:rotateX(-180deg) rotateY(360deg);
+    background-color: var(--bg-color4);
+  } 
+  100%{
+    transform:rotateX(0deg) rotateY(360deg);
+    background-color: var(--bg-color5);
+  } 
+}
+
+
+
+
+
+
+
