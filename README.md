@@ -1,4 +1,4 @@
-<h1>Animations</h1>
+<h1>Animations & Designs</h1>
 <h2>Prerequisites</h2>
 <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">HTML5</a></br>
 <a href="https://developer.mozilla.org/en-US/docs/Archive/CSS3">CSS3</a></br>
