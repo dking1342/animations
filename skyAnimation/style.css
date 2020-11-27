@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+:root{
+  --color-lt: #003049;
+  --color-med-lt: #d62828;
+  --color-med: #f77f00;
+  --color-med-dk: #fcbf49;
+  --color-dk:#eae2b7;
+  --dur:30s;
+  --dur2:15s;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  color: var(--color-dk);
+  font-family: 'Nunito',sans-serif;
+  overflow: hidden;
+}
+
+/* background styling */
+.sky{
+  height: 50vh;
+  width: 100%;
+  background: skyblue;
+  position: relative;
+  animation: sky var(--dur) ease-in-out infinite reverse;
+}
+.grass{
+  height: 50vh;
+  width: 100%;
+  background: green;
+  animation: grass var(--dur) ease-in-out infinite reverse;
+}
+
+/* sun styling */
+.sun{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 100px;
+  left: -10%;
+  background: rgba(255,255,0,1);
+  box-shadow: 0 0 120px rgba(255,255,0,0.9);
+  border-radius: 50%;
+  animation: moon var(--dur) var(--dur2) linear infinite;
+  z-index: 5;
+}
+
+/* stars styling */
+.stars{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  position: relative;
+}
+.star{
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 5px;
+  height: 5px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 10px white;
+  animation: star var(--dur) ease infinite;
+}
+.star:nth-child(even){
+  animation: star var(--dur) ease infinite;
+  animation-delay: 1s;
+}
+
+/* clouds styling */
+.clouds{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left:0;
+}
+.cloud{
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  font-size: 7rem;
+  z-index: 10;
+  animation: cloud var(--dur) linear infinite reverse;
+}
+.cloud:nth-child(1){
+  top: 20%;
+  left: 5%;
+  font-size: 7rem;
+}
+.cloud:nth-child(2){
+  top: 5%;
+  left: 45%;
+  font-size: 10rem;
+}
+.cloud:nth-child(3){
+  top: 17%;
+  left: 85%;
+  font-size: 7rem;
+  z-index: 3;
+}
+
+
+/* moon styling */
+.moons{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 100px;
+  left: -10%;
+  animation: moon var(--dur) linear infinite;
+  z-index: 1;
+}
+.moon{
+  width: 100px;
+  height: 100px;
+  background: rgba(255,255,255,1);
+  border-radius: 50%;
+}
+.moon:nth-child(1){
+  box-shadow: 0px 0px 7px rgba(255,255,255,0.7);
+}
+.moon:nth-child(2){
+  box-shadow: 0px 0px 0px #222;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  animation: sky var(--dur) ease-in-out infinite reverse;
+}
+
+/* keyframes */
+@keyframes moon {
+  0%{top: 100px;left: -20%;}
+  12.5%{top: 50px;left: 10%;}
+  22%{top: 15px;left: 35%;}
+  25%{top: 10px;left: 40%;}
+  27%{top: 15px;left: 45%;}
+  37.5%{top: 50px;left: 70%;}
+  50%{top: 100px;left: 100%;}
+  100%{top: 100px;left: 150%;}
+}
+
+@keyframes sky {
+  0%{background: skyblue;}
+  30%{background: skyblue;}
+  50%{background: #222;}
+  80%{background: #222;}
+  100%{background: skyblue;}
+}
+
+@keyframes cloud {
+  0%{opacity:0; transform: translateX(-100px);}
+  10%{opacity:0.9; transform: translateX(-70px);}
+  20%{opacity:0.9; transform: translateX(-30px);}
+  25%{opacity: 1; transform: translateX(10px);}
+  30%{opacity:0.9; transform: translateX(50px);}
+  40%{opacity:0; transform: translateX(90px);}
+  50%{opacity:0; transform: translateX(130px);}
+  60%{opacity: 0; transform: translateX(170px);}
+  100%{opacity: 0; transform: translateX(210px);}
+}
+
+@keyframes grass {
+  0%{background: green;}
+  30%{background: green;}
+  50%{background: #013220;}
+  80%{background: #013220;}
+  100%{background: green;}
+}
+
+@keyframes star {
+  0%{opacity:0;}
+  5%{opacity:0.4;}
+  10%{opacity:0.9;}
+  13%{opacity:0.3;}
+  20%{opacity:0.9;}
+  23%{opacity:0.3;}
+  25%{opacity: 1;}
+  30%{opacity:0.9;}
+  33%{opacity:0.3;}
+  40%{opacity:0.9;}
+  43%{opacity:0.3;}
+  50%{opacity:0.8}
+  60%{opacity: 0;}
+  100%{opacity: 0;}
+}
