@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+:root{
+  --color-lt: #f1f1f2;
+  --color-med-lt: #7a7c7f;
+  --color-med: #8c9296;
+  --color-med-dk: #8c7a73;
+  --color-dk:#231c23;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background-image: radial-gradient(circle farthest-side,#fff,#aaa);
+  font-family: 'Nunito',sans-serif;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 20vh 80vh;
+  align-content: center;
+  justify-content: center;
+}
+
+h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.25rem;
+}
+.app-container{
+  width: 450px;
+  height: 400px;
+  border-radius: 25px;
+  background: #777;
+  color: #eee;
+  font-weight: bold;
+  padding: 10px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit,minmax(125px,1fr));
+  grid-template-rows: repeat(3,1fr);
+  align-items: center;
+  justify-items: center;
+  box-shadow: 0 10px 10px 0 rgba(0,0,0,0.3);
+}
+.app{
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  border-radius: 15px;
+  display: grid;
+  grid-gap: 5%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 75% 20%;
+  align-items: center;
+  justify-items: center;
+}
+.icon-img{
+  width: 70%;
+  height: 100%;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4.5rem;
+  background: #000;
+}
+
+/* specific icon styling */
+.instagram{
+  background-image:
+    linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
+}
+.facebook,
+.youtube,
+.reddit{background: #fff;}
+.squarespace{
+  background-image:
+    linear-gradient(to bottom, #999 3%,#eee 3%,#ddd 3%,#ccc 3%, black 20%);
+}
+.wordpress{
+  background: #21759b;
+  background-image:
+    linear-gradient(45deg,#21759b 50%,rgba(255,255,255,0.3));
+}
+.stumbleupon{background: #eb471d;}
+.yahoo{
+  background-image:
+    linear-gradient(120deg,rgba(114,14,158,0.9) 50%,rgba(114,14,158,0.3) 100%);
+}
+.digg{
+  background: #005be2;
+  background-image:
+    linear-gradient(290deg,#005be2 70%,rgba(255,255,255,0.3));
+}
+.fa-instagram{opacity: 0.9;}
+.fa-facebook{color: #4267b2;}
+.fa-youtube{
+  color: #ff0000;
+  font-size: 4rem;
+}
+.fa-squarespace{font-size: 3.75rem;}
+.fa-reddit{color: #ff4500;}

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+:root{
+  --animation-speed:cubic-bezier(.75,.26,.74,.74);
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  background: #eee;
+  color: #999;
+  font-family: 'Nunito',sans-serif;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  width: 500px;
+  height: 500px;
+  background: grey;
+  perspective: 1000px;
+  border:1px solid black;
+  background-image: url('https://images.pexels.com/photos/5561371/pexels-photo-5561371.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+  background-position: center;
+  mix-blend-mode:hard-light;
+  filter: drop-shadow(5px 5px 10px black);
+}
+
+.minute{
+  transform-origin: 250px 250px;
+  transform:rotate(0deg);
+  /* animation:animate 60s steps(60) infinite; */
+}
+
+
+
+@keyframes animate {
+  from{transform:rotate(0deg);}
+  to{transform:rotate(360deg);}
+}

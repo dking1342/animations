@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+:root{
+  --stroke:0;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  color: black;
+  font-family: 'Nunito',sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  /* display:none; */
+  width: 2250px;
+  height: 1500px;
+  position: relative;
+  background-color: black;
+}
+
+/* .catPhoto{
+  width: 30%;
+  height: auto;  
+  mix-blend-mode: overlay;
+} */
+
+.cat-container{
+  position: absolute;
+  top: 380px;
+  left:220px;
+  width: 300px;
+  height: 240px;
+  overflow:hidden;
+  transform:scale(0.8);
+}
+.cat-container::before{
+  content:'';
+  width:350px;
+  height: 280px;
+  position: absolute;
+  top: 0px;
+  left:0px;
+  transform: scale(1);
+  background-color: white;
+  mix-blend-mode: difference;
+}
+
+#svg{
+  width: 2250px;
+  height: 1500px;
+  position: relative;
+  border: 1px solid black;
+}
+
+.pawpulation{
+  font-size: 18rem;
+  z-index: 3;
+}
+
+.control{
+  font-size: 15rem;
+}
+
+#paw1{
+  transform:scale(0.67) translate(-150px,430px) rotate(25deg);
+}
+#paw2{
+  transform:scale(0.7) translate(500px,-450px) rotate(25deg);
+}
+#paw3{
+  transform:translate(400,500) scale(0.5);
+}
+#paw4{
+  transform: translate(225,245) scale(0.5)
+}

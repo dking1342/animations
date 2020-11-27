@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+:root{
+  --stroke:0;
+  --height:400px;
+  --width:400px;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  background-image: 
+    linear-gradient(45deg,transparent 0%, #002244 15%, transparent 30%, #69be28 80%, #002244 100%),
+    linear-gradient(-45deg,#002244 0%, transparent 25%, #002244 50%, transparent 100%);
+  color: #999;
+  font-family: 'Nunito',sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  width: var(--width);
+  height: var(--height);
+  perspective: 500px;
+  /* border: 1px solid black; */
+  position: relative;
+}
+
+.left-container,
+.right-container{
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+.left-bg,
+.right-bg{
+  width: var(--width);
+  height: var(--height);
+  background-color: #002244;
+  position: relative;
+}
+.left-img,
+.right-img{
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  top: 0;
+  left: 0;
+  mix-blend-mode: overlay;
+}
+.left-img img,
+.right-img img{
+  width: var(--width);
+  height: var(--height);
+  object-fit: cover;
+  object-position: center;
+}
+
+.right-container{
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  transform-origin: bottom left 120px;
+  right:0;
+  bottom:0;
+  transform: rotateX(-0deg) rotateY(-40deg) rotateZ(-6.5deg) translateZ(-100px) translateX(-147px) translateY(-60px) scale(0.97);
+}
+.left-container{
+  transform-origin: bottom right 100px;
+  transform: rotateX(-0deg) rotateY(45deg) rotateZ(-10deg) translateZ(60px) translateX(-80px) translateY(-120px) scale(0.5);
+}
+
+.right-bg{
+  background-image: linear-gradient(45deg, #002244 50%,#69be28 100%);
+}
+.right-bg::after{
+  background-color: #69be28;
+  background-image: linear-gradient(45deg, #002244 100%,#69be28 100%);
+  mix-blend-mode: color;
+}
+.left-bg{
+  background-image: linear-gradient(225deg, #002244 50%,#69be28 100%);
+}
+.left-bg::after{
+  background-color: #69be28;
+  background-image: linear-gradient(225deg, #002244 50%,#69be28 100%);
+  mix-blend-mode: color;
+}
+
+.seahawks{
+  width: calc(var(--width) / 2);
+  height: calc(var(--height) / 4);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  object-fit: 100%;
+  transform:translate(-50%, -50%);
+  mix-blend-mode: overlay;
+}
+
+
+#svg{
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+

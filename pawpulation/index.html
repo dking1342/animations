@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- UI interface meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font Awesome script -->
+    <script src="https://kit.fontawesome.com/9e65d56683.js"></script>
+    <!-- Page style sheet -->
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@900&family=Kanit:wght@900&display=swap" rel="stylesheet">    
+    
+    <title>Template Website</title>
+  </head>
+  <body>
+    <header>
+      <h1>Meme Converter</h1>
+    </header>
+    <section class="generator">
+      <div class="convertImg">
+        <div class="imgHold"></div>
+      </div>
+      <input id="saveFile" type="file"  accept="image/*"  >
+      <div class="controllers">
+        <h1>Customize</h1>
+        <div class="controller toptext-container">
+          <label for="topText">Top Text</label>
+          <input type="text" name="topText" id="topText">
+        </div>
+        <div class="controller bottomtext-container">
+          <label for="bottomText">Bottom Text</label>
+          <input type="text" name="bottomText" id="bottomText">
+        </div>
+        <div class="controller textcolor-container">
+          <label for="textcolor">Text Color</label>
+          <input type="color" name="textcolor" id="textcolor">
+        </div>
+        <div class="controller bgcolor-container">
+          <label for="bgcolor">Background Color</label>
+          <input type="color" name="bgcolor" id="bgcolor">
+        </div>
+        <div class="controller fontType-container">
+          <label for="fontType">Font Type</label>
+          <select id="fontType">
+            <optgroup style="font-family:arial">
+                <option>Arial</option>
+            </optgroup>
+            <optgroup style="font-family: Times New Roman">
+                <option>Times New Roman</option>
+            </optgroup>
+            <optgroup style="font-family: Helvetica">
+                <option>Helvetica</option>
+            </optgroup>
+            <optgroup style="font-family: Times">
+                <option>Times</option>
+            </optgroup>
+            <optgroup style="font-family: Courier New">
+                <option>Courier New</option>
+            </optgroup>
+            <optgroup style="font-family: Courier">
+                <option>Courier</option>
+            </optgroup>
+            <optgroup style="font-family: Candara">
+                <option>Candara</option>
+            </optgroup>
+            <optgroup style="font-family: Geneva">
+                <option>Geneva</option>
+            </optgroup>
+            <optgroup style="font-family: Calibri">
+                <option>Calibri</option>
+            </optgroup>
+            <optgroup style="font-family: Optima">
+                <option>Optima</option>
+            </optgroup>
+            <optgroup style="font-family: Cambria">
+                <option>Cambria</option>
+            </optgroup>
+            <optgroup style="font-family: Garamond">
+                <option>Garamond</option>
+            </optgroup>
+            <optgroup style="font-family: Perpetua">
+                <option>Perpetua</option>
+            </optgroup>
+            <optgroup style="font-family: Monaco">
+                <option>Monaco</option>
+            </optgroup>
+            <optgroup style="font-family: Didot">
+                <option>Didot</option>
+            </optgroup>
+            <optgroup style="font-family: Brush Script MT">
+                <option>Brush Script MT</option>
+            </optgroup>
+            <optgroup style="font-family: Lucida Bright">
+                <option>Lucida Bright</option>
+            </optgroup>
+            <optgroup style="font-family: Copperplate">
+                <option>Copperplate</option>
+            </optgroup>
+            <optgroup style="font-family:verdana">
+                <option>veranda</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="controller fontSize-container">
+          <label for="fontSize">Font Size</label>
+          <input type="number" id="fontSize" name="fontSize" min="0" max="50" value="16" step="1">
+        </div>
+        <div class="controller fontWeight-container">
+          <label for="fontWeight">Font Weight</label>
+          <input type="range" id="fontWeight" name="fontWeight" min="0" max="10" value="1" step="1">
+        </div>
+      </div>
+      <button class="btn-convert">Convert</button>      
+      <h1 class="header convertHead"><i class="fas fa-chevron-down"></i> Coverted Meme <i class="fas fa-chevron-down"></i> </h1>
+      <canvas class="canvas" width="500" height="500"></canvas>
+      <a class="downloadTag" >Download Photo</a>
+    </section>
+
+
+
+<!-- Scripts -->
+  <script src="./main.js"></script>
+</body>
+</html>
