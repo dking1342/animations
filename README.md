@@ -1,9 +1,9 @@
 <h1>Animations</h1>
 <h2>Prerequisites</h2>
-<a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">HTML5</a>
-<a href="https://developer.mozilla.org/en-US/docs/Archive/CSS3">CSS3</a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/SVG">SVG</a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Javascript</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">HTML5</a></br>
+<a href="https://developer.mozilla.org/en-US/docs/Archive/CSS3">CSS3</a></br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/SVG">SVG</a></br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Javascript</a></br>
 
 <h2>Getting Started</h2>
 <p>
@@ -26,7 +26,7 @@ If you are not familiar with any of these then feel free to check on the many si
 </p>
 <h2>Repo Setup</h2>
 <p>
-This repo is setup so that each branch offers a new and different animation utilizaing HTML, CSS and/or SVG. The branch names give guidance as to the type of animation that you will find within the code. The files in each branch are limited to HTML and CSS files with some having Javascript if needed. 
+This repo is setup so that each folder offers a new and different animation utilizaing HTML, CSS and/or SVG. The folder names give guidance as to the type of animation that you will find within the code. The files in each folder are limited to HTML and CSS files with some having Javascript if needed. 
 </p>
 <h2>Conclusion</h2>
 <p>
