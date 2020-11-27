@@ -1,22 +1,34 @@
 <h1>Animations</h1>
-<h2>Technologies and Tools Used</h2>
-<ul>
-<li>HTML5</li>
-<li>CSS3</li>
-<li>SVG</li>
-</ul>
-<h2>Repo Users</h2>
+<h2>Prerequisites</h2>
+<a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">HTML5</a>
+<a href="https://developer.mozilla.org/en-US/docs/Archive/CSS3">CSS3</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/SVG">SVG</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Javascript</a>
+
+<h2>Getting Started</h2>
 <p>
-This repo is meant primarily for front end web developers. The repo has a number of mini-projects that focus on animations using HTML5, CSS3 and SVG.  
-</p>
-<h2>Use Case</h2>
-<p>
-Each of the folders in this repo have a different type of animation. The use cases for each could be for learning purposes, inspiration or for practical use in production within a site or app.
-</p>
-<h2>Goals</h2>
-<p>
-My goal in making this repo is to explore, learn, practice and build the skills needed to be a proficient front end web developer. I take inspiration from web designs, sites, apps or gadget items I see when meandering around the internet. 
+This project is full of styling tools and techniques. You will need to have a basic to medium level understanding of HTML5, CSS3 and SVG. 
 </p>
 <p>
-My secondary goal is to make decent content so that others can use and perhaps build on what I have originally made.
+HTML5 otherwise known as hypertext markup language is used to create the basic browser structure. It helps build on the document object model with various nodes making up the content. 
+</p>
+<p>
+CSS3 otherwise known as cascading style sheets is the typical format used to style HTML files. With the vast amount of properties that can be used, you will understand how these styling techniques can be used to make the uneventful HTML browser rendering into something quite magical if done right. 
+</p>
+<p>
+SVG otherwise known as scaleable vector grahpics is a markup language used to describe two dimensional based vector graphics. Pretty redundant! In layman's terms, it is where you can create all sorts of shapes, creatures and designs only limited by your imagination and skill level.
+</p>
+<p>
+Javascript is a lightweight compiled programming language. The definition goes well beyond that and can be found on the MDN link shown above. There is limited usage of Javascript in these files, but it is important that you at least know the basics of Javascript to understand what is happening.
+</p>
+<p>
+If you are not familiar with any of these then feel free to check on the many sites that offer tutorials, courses and crash courses on this topic.
+</p>
+<h2>Repo Setup</h2>
+<p>
+This repo is setup so that each branch offers a new and different animation utilizaing HTML, CSS and/or SVG. The branch names give guidance as to the type of animation that you will find within the code. The files in each branch are limited to HTML and CSS files with some having Javascript if needed. 
+</p>
+<h2>Conclusion</h2>
+<p>
+This repo is meant to be a means of exploration, inspriation or just review. Please enjoy yourself and see what interests you and sparks your imagination!
 </p>
